@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Sam Kallel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main>
+
+      <!-- HOME -->
+      <section id="home">
+        <h1>Bonjour, je suis <strong>Sam🖐️</strong></h1>
+        <p>Développeur Web Front-End en formation chez GoMyCode.</p>
+        <a href="#contact">Me contacter</a>
+        <br />
+        <a href="#about">En savoir plus</a>
+      </section>
+
+      <hr />
+
+      <!-- ABOUT -->
+      <section id="about">
+        <h2>About</h2>
+        <img src="https://ui-avatars.com/api/?name=Sam+Kallel&size=200&background=4a90d9&color=fff&rounded=true" alt="Sam Kallel" width="200px" />
+        <p>
+          Étudiant passionné par le développement web, je suis actuellement en
+          formation chez GoMyCode à Tunis. J'apprends à construire des
+          interfaces modernes avec HTML, CSS et JavaScript.
+        </p>
+        <ul>
+          <li><strong>Localisation :</strong> Tunis, Tunisie</li>
+          <li><strong>Formation :</strong> GoMyCode — Développement Web Full Stack</li>
+          <li><strong>Langues :</strong> Français, Arabe, Anglais</li>
+          <li>
+            <strong>Email :</strong>
+            <a href="mailto:samkallel@hotmail.fr">samkallel@hotmail.fr</a>
+          </li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- WORK -->
+      <section id="work">
+        <h2>Work</h2>
+
+        <article>
+          <h3>Workshop HTML</h3>
+          <p>
+            Premier projet HTML : découverte des balises sémantiques, tableaux,
+            formulaires et médias.
+          </p>
+        </article>
+
+        <article>
+          <h3>Menu Restaurant — Wonder Food</h3>
+          <p>
+            Page de menu pour un restaurant fictif avec navigation par ancres,
+            listes d'items et page de contact.
+          </p>
+        </article>
+
+        <article>
+          <h3>Portfolio</h3>
+          <p>
+            Ce portfolio : présentation de mon profil, mes projets et mes
+            compétences avec un formulaire de contact.
+          </p>
+        </article>
+
+        <!-- Checkpoint : video et audio -->
+        <h3>Démo Média</h3>
+        <video controls width="480">
+          <source src="assets/video.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <br />
+        <audio controls>
+          <source src="assets/audio.mp3" type="audio/mp3" />
+          Votre navigateur ne supporte pas l'audio.
+        </audio>
+      </section>
+
+      <hr />
+
+      <!-- RESUME -->
+      <section id="resume">
+        <h2>Resume</h2>
+
+        <!-- Checkpoint : table -->
+        <table border="1">
+          <caption>Compétences Techniques</caption>
+          <thead>
+            <tr>
+              <th>Compétence</th>
+              <th>Niveau</th>
+              <th>Mois d'expérience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML5</td>
+              <td>Intermédiaire</td>
+              <td>6 mois</td>
+            </tr>
+            <tr>
+              <td>CSS3</td>
+              <td>Débutant</td>
+              <td>3 mois</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Débutant</td>
+              <td>1 mois</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Formation</h3>
+        <!-- Checkpoint : liste ordonnée -->
+        <ol>
+          <li>HTML &amp; CSS — GoMyCode (2024)</li>
+          <li>JavaScript — GoMyCode (2024)</li>
+          <li>React — GoMyCode (en cours)</li>
+        </ol>
+
+        <h3>Expériences</h3>
+        <ul>
+          <li>Projets personnels de développement web</li>
+          <li>Workshops pratiques chez GoMyCode</li>
+        </ul>
+      </section>
+
+      <hr />
+
+      <!-- CONTACT — Checkpoint : HTML form -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Envoyez-moi un message, je vous répondrai rapidement.</p>
+
+        <form>
+          <label for="nom">Nom :</label>
+          <input
+            type="text"
+            id="nom"
+            name="nom"
+            placeholder="Votre nom..."
+            required
+          /><br />
+
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          /><br />
+
+          <label for="sujet">Sujet :</label>
+          <input
+            type="text"
+            id="sujet"
+            name="sujet"
+            placeholder="Sujet..."
+          /><br />
+
+          <label for="message">Message :</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="40"
+            placeholder="Votre message..."
+          ></textarea><br />
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <p>
+        &copy; 2024 Sam Kallel &mdash;
+        <a href="#home">Retour en haut</a>
+      </p>
+    </footer>
+
+  </body>
+</html>
